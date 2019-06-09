@@ -2,29 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1dc83c9e-4c00-4bc5-ba10-a93c4faba1ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/.idea/RecortarRostros.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Cascadas/haarcascade_frontalface_alt.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Cascadas/haarcascade_frontalface_alt_tree.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Entrada/DSC07820.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Entrada/DSC07821.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Entrada/DSC07833.JPG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Procesar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RecortarRostros/Salida/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/Generar Haarcascade.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Generar Haarcascade.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/01 crearSamples.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/02 entrenarHaar.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/03 convertir.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/negativo/create_list.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/positivo/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/train/positivo/info.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +59,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +87,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,6 +158,9 @@
       <module name="DeteccionDeObjetosPersonalizados" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -206,12 +194,13 @@
       <updated>1560046205906</updated>
       <workItem from="1560046224004" duration="477000" />
       <workItem from="1560052623528" duration="853000" />
-      <workItem from="1560053706529" duration="11033000" />
+      <workItem from="1560053706529" duration="11631000" />
+      <workItem from="1560112779831" duration="1688000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12363000" />
+    <option name="totallyTimeSpent" value="14649000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -225,10 +214,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22239032" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Jupyter" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -242,26 +230,20 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Jupyter" order="13" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" weight="0.18078668" />
+      <window_info anchor="right" x="0" y="0" width="295" height="544" id="Documentation" order="5" side_tool="true" visible="true" weight="0.18078668" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
@@ -276,19 +258,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/../README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -299,18 +269,12 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train/positivo/convertir.py" />
     <entry file="file://$PROJECT_DIR$/notebooks/Generar Haarcascade.ipynb">
       <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/train/positivo/convertir.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="59" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb">
+      <provider selected="true" editor-type-id="jupyter-editor" />
     </entry>
   </component>
 </project>
