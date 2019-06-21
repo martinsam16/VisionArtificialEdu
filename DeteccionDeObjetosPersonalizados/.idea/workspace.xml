@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dc83c9e-4c00-4bc5-ba10-a93c4faba1ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Generar Haarcascade.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Generar Haarcascade.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/Utilizar Haarcascade.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/01 crearSamples.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/02 entrenarHaar.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/03 convertir.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/negativo/create_list.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/train/positivo/info.txt" beforeDir="false" afterPath="$PROJECT_DIR$/train/positivo/info.txt" afterDir="false" />
-    </list>
+    <list default="true" id="1dc83c9e-4c00-4bc5-ba10-a93c4faba1ef" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +50,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,6 +77,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,11 +187,12 @@
       <workItem from="1560052623528" duration="853000" />
       <workItem from="1560053706529" duration="11631000" />
       <workItem from="1560112779831" duration="1688000" />
+      <workItem from="1560391925345" duration="593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14649000" />
+    <option name="totallyTimeSpent" value="15242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -214,7 +206,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22541603" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22844176" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
