@@ -1,71 +1,56 @@
-import threading as hilo
+import os
 
 import cv2
-import numpy as np
+import serial
+
+#Configuración serial
+comunicacionSerial = serial.Serial(
+    port='COM4',
+    baudrate=9600,
+    timeout=1
+)
 
 
-
-def guardarImagenObjeto(img, contador):
-    copia = np.array(img)
+def guardarImagenObjeto(imagen):
     pathHaarcascade = "models/palomas.xml"
     pathSalida = "output/"
 
     clasificador = cv2.CascadeClassifier(pathHaarcascade)
 
     detectado = clasificador.detectMultiScale(
-        copia,
-        minNeighbors=90,
+        imagen,
+        minNeighbors=60,
         scaleFactor=3.5,
-        minSize=(90,90)
+        minSize=(90,90),
+        flags=cv2.CALIB_CB_NORMALIZE_IMAGE
     )
 
     if len(detectado) >= 1:
         for (x, y, w, h) in detectado:
-            cv2.rectangle(copia, (x, y), (x + w, y + h), (500, 600, 10), 3)
-        pathSalida = pathSalida + str(contador)+".jpg"
-        print(pathSalida)
-        cv2.imwrite(pathSalida, copia)
-
-    del clasificador
+            cv2.rectangle(imagen, (x, y), (x + w, y + h), (500, 600, 10), 3)
+        pathSalida = pathSalida +str(len(os.listdir(path=pathSalida))+1)+".jpg"
+        cv2.imwrite(pathSalida, imagen)
+        comunicacionSerial.write(data=b'1')
 
 
-substractorKNN = cv2.createBackgroundSubtractorKNN(
-    history=500,
-    dist2Threshold=400,
-    detectShadows=False
-)
-cv2.ocl.setUseOpenCL(False)
+    del clasificador, imagen
+
 
 captura = cv2.VideoCapture(0)
-hilos = list()
-i = 0
 
-while True:
-    a, capturado = captura.read()
+while comunicacionSerial.is_open():
+    leido = comunicacionSerial.read()
+    print("Leido: ",leido)
+    if not leido is None:
+        for i in range (0,3):
+            a, capturado = captura.read()
 
-    if not a:
-        break
+            if not a:
+                break
 
-    if cv2.waitKey(30) & 0xff == ord("s"):
-        break
-
-    contornosimg = substractorKNN.apply(capturado).copy()
-    contornos, _ = cv2.findContours(
-        contornosimg,
-        cv2.RETR_TREE,
-        cv2.CHAIN_APPROX_SIMPLE
-    )
-
-    for c in contornos:
-        if cv2.contourArea(c) > 100000:
-            print("Hay movimiento!!")
-            t = hilo.Thread(target=guardarImagenObjeto(capturado, i))
-            hilos.append(t)
-            t.start()
-            i+=1
-
-    cv2.imshow('Captura', capturado)
+            guardarImagenObjeto(capturado)
 
 captura.release()
 cv2.destroyAllWindows()
+comunicacionSerial.close()
 
